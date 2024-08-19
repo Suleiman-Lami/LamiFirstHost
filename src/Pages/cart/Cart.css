@@ -1,0 +1,346 @@
+.Cart{
+    width:100%;
+    height: max-content;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cartWrap{
+    width: 100%;
+    height: max-content;
+    min-height: 85vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.cartHeader{
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+        width: 20%;
+        height: 40px;
+        color: white;
+        border: none;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    button:hover{
+        background-color: rgba(255, 0, 0, 0.798);
+        cursor: pointer;
+    }
+    
+}
+
+.cartBody{
+    width: 100%;
+    height: max-content;
+    min-height: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    h1{
+        margin-top: 15%;
+        color: white;
+        font-style: oblique;
+    }
+}
+
+.cartCard{
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 4px lightgrey;
+    background-color: rgba(0, 0, 0, 0.309);
+}
+
+.cartImg{
+    width: 20%;
+    height: 100%;
+   border-radius: 10px;
+    background-color: grey;
+
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.cartdes{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3{
+        text-transform: uppercase;
+    }
+}
+
+.cartBtnHolder{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+        width: 20%;
+        height: 70%;
+        border: none;
+        border-radius: 10px;
+        background-color: #ebebeb;
+    }
+
+}
+.arith{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+
+    button{
+        width: 30%;
+        height: 70%;
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+        cursor: pointer;
+    }
+    .dull{
+        color: black;
+
+    }
+    .dull:hover{
+        background-color: rgba(249, 91, 91, 0.838);
+    }
+}
+
+.checkOut{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        width: 30%;
+        height: 100%;
+        cursor: pointer;
+        border: 1px solid green;
+        font-size: 18px;
+        font-weight: 500;
+        color: green;
+        background-color: #ebebeb;
+    }
+    button:hover{
+        background-color: green;
+        border: none;
+        color: white;
+    }
+}
+
+.Checkout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.247);
+    position: absolute;
+    display: flex;
+    /* padding-top: 20px; */
+    justify-content: center;
+    padding-top: 30px;
+    /* align-items: center; */
+}
+.Modal{
+    width: max-content;
+    min-width: 50%;
+    height: max-content;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 4px grey;
+}
+
+.Top{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    span{
+        font-size: 24px;
+        font-weight: 600; 
+    }
+    span:hover{
+        cursor: pointer;
+        color: red;
+    }
+}
+.details{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    .paymentBtn{
+        width: 100%;
+        height: 8vh;
+        border: none;
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: green;
+    }
+
+    .box{
+      width: 100%;
+      height: max-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; 
+      
+      .boxImg{
+        width: 30%;
+        height: 20vh;
+        background-color: grey;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+        .des{
+            width: 60%;
+            height: 25vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
+
+            h3{
+                text-transform: uppercase;
+            }
+
+            .btnHolder{
+                width: 100%;
+                height: 30%;
+                gap: 10px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+
+                span{
+                    font-size: 18px;
+                }
+
+                button{
+                    width: 20%;
+                    height: 90%;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    box-shadow: 3px 2px 4px grey;
+                }
+                button:hover{
+                    background-color: red;
+                    color: white;
+                }
+                .increase:hover{
+                    background-color: green;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Cart{
+        padding: 10px;
+    }
+    .cartWrap{
+        padding: 0%;
+        width: 100%;
+    }
+    .cartHeader{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 10px;
+
+        button{
+            width: 25%;
+            height: 30px;
+        }
+    }
+    .cartCard{
+        height: 30vh;
+        gap: 20px;
+    }
+    .cartdes{
+        width: 60%;
+        span{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .cartImg{
+        width: 40%;
+    }
+    .cartBtnHolder{
+        height: 40%;
+        button{
+            width: 40%;
+        }
+    }
+    .arith{
+        width: 40%;
+
+        button{
+            width: 50%;
+        }
+    }
+}
+

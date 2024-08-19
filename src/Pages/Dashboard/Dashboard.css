@@ -1,0 +1,57 @@
+.dashBoard{
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(2,0,36,1) 3%, rgba(38,121,9,1) 19%, rgba(2,0,36,1) 100%);  
+}
+
+.sideBar{
+    width: 15%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    h2{
+        font-style: oblique;
+        font-size: 22px;
+    }
+
+    .dashBtn{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        button{
+            width: 50%;
+            height: 10%;
+            border: none;
+
+        }
+    }
+    
+    button{
+        width: 50%;
+        height: 30px;
+        border: none;
+    }
+}
+
+
+.dashBody{
+    width: 90%;
+    height: max-content;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    background: radial-gradient(circle, rgba(2,0,36,1) 3%, rgba(38,121,9,1) 19%, rgba(2,0,36,1) 100%);  
+
+}
