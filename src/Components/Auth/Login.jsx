@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Login.css'
 import {useNavigate} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
-import {z} from 'zod'
+import {z} from "zod"
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import {buyersLogin } from '../../Global/Slice'
@@ -11,9 +11,7 @@ const Login = () => {
 
   const dispatch = useDispatch()
   const Nav = useNavigate();
-  const isLoggedin=useSelector((state)=>state.loginIn);
-  // console.log(isLoggedin);
-  
+  const isLoggedin=useSelector((state)=>state.loginIn);  
 
     const Users = z.object({
       email: z.string({message: 'Check your email'}),
