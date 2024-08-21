@@ -17,7 +17,7 @@ const Login = () => {
       email: z.string({message: 'Check your email'}),
       password: z.string({message: 'must be a string'}).min(5, {message: 'must be more than 5'}).regex(  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/, {message: "must contain a special character"})
     })
-    const {register, handleSubmit, formState: {errors}, setError} = useForm({
+    const {register, handleSubmit, formState: {errors}, setErrors} = useForm({
       resolver: zodResolver(Users),
     });
 
@@ -25,12 +25,16 @@ const Login = () => {
       dispatch(buyersLogin(data))
       console.log(data);   
       // if (isLoggedin) {
-        Nav('/home/homepage')
+        // Nav('/home/homepage')
       // }  
     }
-    // useEffect(() => {
-     
-    // }, [isLoggedin])
+
+    useEffect(() => {
+      if (isLoggedin) {
+        Nav('/home/homepage');
+      }
+    }, [isLoggedin]);
+    
     
   
   return (
